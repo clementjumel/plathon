@@ -10,7 +10,7 @@ setup(
     name="arkhn-",  # e.g. arkhn-pyckaxe
     version="0.0.1",
     author="Arkhn's Data Team",
-    author_email="research@arkhn.com",
+    author_email="data@arkhn.com",
     description="",  # e.g. "Arkhn's Pyckaxe package: a toolbox for Pypa."
     long_description=long_description,
     long_description_content_type="text/markdown",
