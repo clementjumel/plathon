@@ -22,7 +22,7 @@ If you want to contribute to this repository, make sure you run the tests (runni
 `pytest`) before pushing anything.
 
 Furthermore, we use `pre-commit` to run a variety of sanity checks and code
-reformatting before each commit. Therefore, if you want to contribute, please install
-`pre-commit` (e.g. `pip install pre-commit`) and install it on this repository with
+reformatting before each commit. Therefore, please install
+`pre-commit` (e.g. with `pip install pre-commit`) and install it on this repository with
 `pre-commit install` at the root of the repository. Then, `pre-commit` will run its checks
 before each commit. `pre-commit`'s configuration file is `/.pre-commit-config.yaml`.
