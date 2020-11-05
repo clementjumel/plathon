@@ -7,10 +7,10 @@ All heavy data stuff must be inside a folder `/data/` and will be git-ignored.
 
 ## Annexe
 ### Code-formatting
-Arkhn's data team uses Black to reformat its code. Black's configuration file is `/pyproject.toml`.
-The only notable parameter is that we use `--line-length=100`.
+In Arkhn's data team, we use Black to reformat our code. Black's configuration file is 
+`/pyproject.toml`. The only notable parameter is that we use `--line-length=100`.
 
-Arkhn's data team also uses Flake8 to reformat its code. Flake8's configuration file is `/.flake8`.
+We also use Flake8 to reformat our code. Flake8's configuration file is `/.flake8`.
 The only notable parameter is that we use `--max-line-length=100`.
 
 ### Testing
