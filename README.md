@@ -20,11 +20,11 @@ This repository implements tests in the `/tests/` folder. To run these tests, in
 and simply run the command `pytest` at the root of this repository.
 
 ### Contributing
-If you want to contribute to this repository, make sure you run the test (running the command
+If you want to contribute to this repository, make sure you run the tests (running the command
 `pytest`) before pushing anything.
 
 Furthermore, we use `pre-commit` to run a variety of sanity checks and Black and Flake8's
 reformatting before committing anything. Therefore, if you want to contribute, please download
 `pre-commit` (e.g. `pip install pre-commit`) and install it on this repository through
-`pre-commit install` run at the root of this repository. `pre-commit`'s configuration file is
-`/.pre-commit-config.yaml`.
+`pre-commit install` run at the root of this repository, then, `pre-commit` will run its checks
+before each commit. `pre-commit`'s configuration file is `/.pre-commit-config.yaml`.
