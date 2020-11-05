@@ -1,4 +1,4 @@
-# General Git project template
+# General GitHub repository template
 
 Custom template for Git projects. 
 
