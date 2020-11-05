@@ -7,14 +7,14 @@ with open("requirements.txt") as f:
     requirements = f.read().split()
 
 setup(
-    name="",
+    name="arkhn-",  # e.g. arkhn-pyckaxe
     version="0.0.1",
-    author="",
-    author_email="",
-    description="",
+    author="Arkhn's Data Team",
+    author_email="research@arkhn.com",
+    description="",  # e.g. "Arkhn's Pyckaxe package: a toolbox for Pypa."
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/",
+    url="",  # e.g. "https://github.com/arkhn/pyckaxe"
     packages=find_packages(),
     install_requires=requirements,
     classifiers=[

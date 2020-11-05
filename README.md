@@ -1,18 +1,30 @@
-# General GitHub repository template
+# Arkhn Data Team's Project Template
 
-Custom template for Git projects. 
+This repository is a template for Arkhn's data team Python projects.
 
-All heavy data stuff must be inside a folder `/data/` and will be Git-ignored.
+All heavy data stuff must be inside a folder `/data/` and will be git-ignored.
 
-## Black
-This repository implements Black to re-format its code. Black's configuration file is 
-`/.pyproject.toml`.
 
-## Flake8
-This repository implements Flake9 to re-format its code. Flake8's configuration file is `/.flake8`.
+## Annexe
+### Formatting
+#### Black
+Arkhn's data team uses Black to reformat its code. Black's configuration file is `/pyproject.toml`.
+The only notable parameter is that we use `--line-length=100`.
 
-## Pre-commit
-In this repository, pre-commit is available. To use it, you must install it, running `pre-commit
- install` at the root of this repository. Pre-commit configuration file is `
- /.pre-commit-config.yaml`. In addition to a few sanity checks, this pre-commit set-up implements 
- Black's and Flake8's reformatting.
+#### Flake8
+Arkhn's data team uses Flake8 to reformat its code. Flake8's configuration file is `/.flake8`.
+The only notable parameter is that we use `--max-line-length=100`.
+
+### Testing
+This repository implements tests in the `/tests/` folder. To run these tests, install `pytest`
+and simply run the command `pytest` at the root of this repository.
+
+### Contributing
+If you want to contribute to this repository, make sure you run the test (running the command
+`pytest`) before pushing anything.
+
+Furthermore, we use `pre-commit` to run a variety of sanity checks and Black and Flake8's
+reformatting before committing anything. Therefore, if you want to contribute, please download
+`pre-commit` (e.g. `pip install pre-commit`) and install it on this repository through
+`pre-commit install` run at the root of this repository. `pre-commit`'s configuration file is
+`/.pre-commit-config.yaml`.
