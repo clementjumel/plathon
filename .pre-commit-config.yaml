@@ -6,6 +6,7 @@ repos:
     -   id: check-ast  # Check whether the files parse as valid python
     -   id: check-json  # Check json files for parseable syntax
     -   id: check-merge-conflict  # Check for files that contain merge conflict strings
+    -   id: check-toml  # Checks toml files for parseable syntax
     -   id: debug-statements  # Check for debugger imports and `breakpoint()` calls in python
     -   id: detect-private-key  # Detect the presence of private keys
     -   id: name-tests-test  # Verify that test files are named correctly
