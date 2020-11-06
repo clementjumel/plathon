@@ -16,3 +16,19 @@ exclude = '''
   | dist
 )/
 '''
+
+[tool.isort]
+line_length = 100
+multi_line = 11
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py38
+
+[testenv]
+deps = -rrequirements-dev.txt
+commands =
+    coverage run -m pytest
+    coverage report -m
+"""
