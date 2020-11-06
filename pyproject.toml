@@ -28,8 +28,5 @@ envlist = py38
 
 [testenv]
 deps = -rrequirements-dev.txt
-commands =
-    coverage run -m pytest
-    coverage report
-    coverage erase
+commands = pytest
 """
