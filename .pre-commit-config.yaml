@@ -12,6 +12,11 @@ repos:
     -   id: pretty-format-json  # Set a standard for formatting JSON files
     -   id: requirements-txt-fixer # Sort entries in requirements.txt
 
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.6.4
+    hooks:
+    -   id: isort
+
 -   repo: https://github.com/psf/black
     rev: stable
     hooks:
