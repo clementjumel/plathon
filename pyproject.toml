@@ -30,5 +30,6 @@ envlist = py38
 deps = -rrequirements-dev.txt
 commands =
     coverage run -m pytest
-    coverage report -m
+    coverage report
+    covergae erase
 """
