@@ -4,8 +4,6 @@ This repository is a template for Arkhn's data team Python projects.
 
 All heavy data stuff must be inside a folder `/data/` and will be git-ignored.
 
-To manage the documentation, you can use mkdocs. Its configuration file is `/mkdocs.yml`.
-
 ## Annexe
 
 All the modules we use for code re-formatting and testing are specified in 
