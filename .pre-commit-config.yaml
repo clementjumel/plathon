@@ -22,6 +22,11 @@ repos:
     hooks:
     -   id: black
 
+-   repo: https://github.com/asottile/blacken-docs
+    rev: v1.8.0
+    hooks:
+    -   id: blacken-docs
+
 -   repo: https://gitlab.com/PyCQA/flake8
     rev: 3.8.4
     hooks:
