@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 with open("requirements.txt") as f:
-    requirements = f.read().split()
+    requirements = f.read().splitlines()
 
 setup(
     name="arkhn-",  # e.g. arkhn-pyckaxe
