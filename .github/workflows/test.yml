@@ -1,4 +1,4 @@
-name: Python package's test
+name: Test
 
 on:
   push:

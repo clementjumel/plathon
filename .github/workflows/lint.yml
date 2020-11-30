@@ -1,4 +1,4 @@
-name: Python package's lint
+name: Lint
 
 on: [push]
 
