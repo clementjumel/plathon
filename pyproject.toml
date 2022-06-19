@@ -1,7 +1,8 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
 [tool.black]
-line-length = 100
-target-version = ['py36', 'py37', 'py38']
-include = '\.pyi?$'
 exclude = '''
 /(
     \.eggs
@@ -16,17 +17,22 @@ exclude = '''
   | dist
 )/
 '''
+include = '\.pyi?$'
+line-length = 100
+target-version = ['py36', 'py37', 'py38', 'py39']
 
 [tool.isort]
-profile = 'black'
+known_local_folder = ['plathon']
 line_length = 100
+profile = 'black'
 
-[tool.tox]
-legacy_tox_ini = """
-[tox]
-envlist = py38
+[tool.poetry]
+authors = ["clementjumel <clement.jumel@gmail.com>"]
+description = "Generic Python package template"
+name = "plathon"
+version = "0.1.0"
 
-[testenv]
-deps = -rrequirements-dev.txt
-commands = pytest
-"""
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
