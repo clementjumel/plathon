@@ -2,6 +2,8 @@
 build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core>=1.0.0"]
 
+[tool]
+
 [tool.black]
 exclude = '''
 /(
@@ -19,7 +21,23 @@ exclude = '''
 '''
 include = '\.pyi?$'
 line-length = 100
-target-version = ['py36', 'py37', 'py38', 'py39']
+target-version = [
+  'py310',
+  'py311',
+  'py312',
+  'py38',
+  'py39'
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "if __name__ == .__main__.:",
+  "pass",
+  "pragma: no cover",
+  "raise NotImplementedError",
+  "raise TypeError",
+  "raise ValueError"
+]
 
 [tool.isort]
 line_length = 100
@@ -27,11 +45,28 @@ profile = 'black'
 
 [tool.poetry]
 authors = ["clementjumel <clement.jumel@gmail.com>"]
-description = "Generic Python package template"
+description = "Generic Template for Python Packages"
+license = "Apache-2.0"
 name = "plathon"
+readme = "README.md"
+repository = "https://github.com/clementjumel/plathon"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
 python = "^3.9"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.notebooks.dependencies]
+jupytext = "^1.13.5" # Version control for Jupyter notebooks
+notebook = "^6.4.3" # Jupyter notebooks
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.8.2"
+
+[tool.pytest.ini_options]
+addopts = "--cov-report term-missing:skip-covered"
+markers = [
+  "serial",
+  "slow: marks tests as slow (deselect with '-m \"not slow\"')"
+]
