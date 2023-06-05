@@ -1,3 +1,1 @@
-## Plathon
-
-Plathon is a generic Python package template.
+## Plathon: a Generic Template for Python Packages
