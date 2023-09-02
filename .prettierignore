@@ -2,13 +2,10 @@
 # Data stuff
 data/
 datasets/
+models/
 
 # Pycharm stuff
 .idea/
-
-# Models
-models/
-fake_model/
 
 # Mkdocs documenation, as it causes issues with mkdocstring syntax
 docs/
