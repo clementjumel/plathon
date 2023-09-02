@@ -61,11 +61,11 @@ notebook = "^6.4.3" # Jupyter notebooks
 [tool.poetry.group.test.dependencies]
 pytest = "^7.1.2"
 pytest-cov = "^3.0.0"
-pytest-mock = "^3.8.2"
 
 [tool.pytest.ini_options]
-addopts = "--cov-report term-missing:skip-covered"
+addopts = "--import-mode=importlib --cov-report term-missing:skip-covered"
 markers = [
   "serial",
   "slow: marks tests as slow (deselect with '-m \"not slow\"')"
 ]
+
