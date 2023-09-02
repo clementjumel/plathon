@@ -23,7 +23,6 @@ repos:
     rev: 23.3.0
     hooks:
       - id: black
-        exclude: notebooks/
 
   # Isort is used to re-organize our import statements in Python
   - repo: https://github.com/PyCQA/isort
