@@ -36,7 +36,6 @@ repos:
     rev: v1.5.1
     hooks:
       - id: mypy
-        exclude: notebooks/|tests/
 
   # nbstripout is used to remove Jupyter notebooks' cell outputs
   - repo: https://github.com/kynan/nbstripout
