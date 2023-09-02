@@ -42,10 +42,6 @@ exclude_lines = [
   "raise ValueError"
 ]
 
-[tool.isort]
-line_length = 100
-profile = 'black'
-
 [tool.poetry]
 authors = ["clementjumel <clement.jumel@gmail.com>"]
 description = "Generic Template for Python Packages"
@@ -73,3 +69,18 @@ markers = [
   "slow: marks tests as slow (deselect with '-m \"not slow\"')"
 ]
 
+[tool.ruff]
+extend-ignore = [
+  "S311" # Standard pseudo-random generators are not suitable for cryptographic purposes
+]
+extend-select = [
+  "I", # isort
+  "S" # flake8-bandit
+]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.extend-per-file-ignores]
+"__init__.py" = [
+  "F401" # {name} imported but unused
+]
